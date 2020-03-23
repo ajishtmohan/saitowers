@@ -1,4 +1,4 @@
-var interval = 4000;
+var interval = 3000;
 var random_display = 0;
 var imageDir = "images/";
 var imageNum = 0;
