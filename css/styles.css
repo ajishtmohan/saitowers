@@ -14,12 +14,6 @@ html{
     width: 0;
     background: transparent; /* make scrollbar transparent */
 }
-.container{
-  width: 1600px;
-  height: auto;
-  margin: 0 auto;
-  background-color: #ccc;
-}
 
 /* LOGO MENU */
 .logo-menu{
@@ -816,11 +810,7 @@ html{
 and (min-device-width : 320px)
 and (max-device-width : 480px){
 
-  .container{
-    width: 100vw;
-    height: auto;
-    margin: 0 auto;
-  }
+
 /* LOGO MENU */
 .logo-menu{
   position: fixed;
