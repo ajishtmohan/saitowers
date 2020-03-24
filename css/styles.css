@@ -817,7 +817,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px){
 
   .container{
-    width: 100%;
+    width: 100vw;
     height: auto;
     margin: 0 auto;
     background-color: #ccc;
