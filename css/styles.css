@@ -820,7 +820,6 @@ and (max-device-width : 480px){
     width: 100vw;
     height: auto;
     margin: 0 auto;
-    background-color: #ccc;
   }
 /* LOGO MENU */
 .logo-menu{
