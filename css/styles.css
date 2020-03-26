@@ -21,7 +21,7 @@ html{
 .logo-menu{
   position: fixed;
   width: 15%;
-  margin: 0;
+  margin: 0px;
   top: 0;
   text-align: center;
   background-color: #1c1c1c;
@@ -599,11 +599,6 @@ html{
   flex-direction: row;
   justify-content: space-between;
 }
-.acco-text h2{
-  font-size: 5em;
-  font-weight:300;
-  color: #2c28b2;
-}
 .accoleft{
   align-self: center;
   height: auto;
@@ -689,6 +684,10 @@ html{
 .know:hover{
   color: #2c28b2;
   letter-spacing: 2px;
+  -webkit-transition: all .5s ease;
+  -moz-transition:    all .5s ease;
+  -ms-transition:     all .5s ease;
+  -o-transition:      all .5s ease;
 }
 
 /* accommodation section ends here */
@@ -697,72 +696,119 @@ html{
   width: 100%;
   margin: 0 auto;
   height: 100vh;
-  background-size:cover;
-  background-position:center;
   display: flex;
   flex-direction: row;
   justify-content:center;
   text-align: center;
 }
-.LIMF {
-  overflow: hidden;
-}
-.LIMF img{
-  width: auto;
-  height: 100%;
-}
-.LIMF img:hover{
-  width: auto;
-  height: 105%;
-  -webkit-transition: all 5s ease;
-  -moz-transition:    all 5s ease;
-  -ms-transition:     all 5s ease;
-  -o-transition:      all 5s ease;
-}
-.black1{
-  width: 50%;
-  height: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-}
-.PV {
-  overflow: hidden;
-}
-.PV img{
+.restleft{
+  background-color: #1c1c1c;
   width: 100%;
-  height: auto;
+  height: 100vh;
+  position: relative;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: row;
+}
+.restleft img{
+  width: auto;
+  height: 100vh;
   position: absolute;
+  left: -200px;
+  z-index: 5;
 }
-.PV img:hover{
-  width: 105%;
+.restLtextbox {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 50%;
   height: auto;
-  -webkit-transition: all 5s ease;
-  -moz-transition:    all 5s ease;
-  -ms-transition:     all 5s ease;
-  -o-transition:      all 5s ease;
-}
-.rest-text{
-  /* background-color: red; */
-  width:60%;
-  height: 50%;
-  align-self: top;
-  margin-top: 6%;
-}
-.rest-text h2{
-  font-size: 5em;
-  font-weight:300;
-  color: red;
-  text-align: center;
-}
-.rest-text p{
-  line-height: 2em;
-  text-align: center;
-}
-.rest-image{
-  width:60%;
-  height: 50%;
+  display: block;
+  position: absolute;
   align-self: center;
-  overflow-y: hidden;
+  padding: 50px;
+  right: 0;
+  z-index: 10;
+  }
+
+.restleft h2{
+  font-weight: 100;
+  text-align: right;
+  padding: 20px 0 10px 0;
+  font-size: 2em;
+  color: white;
+}
+.restleft p{
+  text-align: right;
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+.res-know{
+  font-weight:normal;
+  margin-top: 10px;
+  text-decoration: none;
+  color: grey;
+  display: inline-block;
+}
+.res-know:hover{
+  color: white;
+  letter-spacing: 2px;
+  -webkit-transition: all .5s ease;
+  -moz-transition:    all .5s ease;
+  -ms-transition:     all .5s ease;
+  -o-transition:      all .5s ease;
+}
+.restright{
+  background-color: #1c1c1c;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: row;
+}
+.restright img{
+  width: auto;
+  height: 100vh;
+  position: absolute;
+  left: -200px;
+  z-index: 5;
+}
+.rest-textbox {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 50%;
+  height: auto;
+  display: block;
+  position: absolute;
+  padding: 50px;
+  right: 0;
+  z-index: 10;
+  }
+
+.restright h2{
+  font-weight: 100;
+  text-align: left;
+  padding: 20px 0 10px 0;
+  font-size: 2em;
+  color: white;
+}
+.restright p{
+  text-align: left;
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+.restRtextbox {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 50%;
+  height: auto;
+  display: block;
+  position: absolute;
+  align-self: center;
+  padding: 50px;
+  left: 0;
+  z-index: 10;
 }
 
 #h-services{

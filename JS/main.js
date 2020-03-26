@@ -45,11 +45,13 @@ $(document).ready(function() {
             $(window).scroll(function () {
                 if ($(window).scrollTop() >= offset) {
                     $(".sidebar").css("right","30px");
-                    $(".logo-menu").css("top", "-80px");
-                    $(".logo-menu").css("background-color", "white");
+                    $(".logo").css("height", "0px");
+                    $("menu-button").css("border", "1px solid white");
+                    $(".logo-menu").css("background-color", "rgba(255, 255, 255, 0.5)");
                 } else {
                     $(".sidebar").css("right","-80px");
-                    $(".logo-menu").css("top", "0px");
+                    $(".logo").css("height", "auto");
+                    $("menu-button").css("border", "2px solid white");
                     $(".logo-menu").css("background-color", "#1c1c1c");
                 }
             });

@@ -22,3 +22,31 @@
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+@keyframes zoomInOut {
+  0%{
+    left: -200px;
+  }
+  50% {
+    left: -100px;
+  }
+  100%{
+    left: -200px;
+  }
+}
+.restleft img {
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-name: zoomInOut;
+    animation-name: zoomInOut;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+.restright img {
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    -webkit-animation-name: zoomInOut;
+    animation-name: zoomInOut;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+}
