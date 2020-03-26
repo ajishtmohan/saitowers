@@ -1,0 +1,24 @@
+@keyframes slowfall {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+}
+.downbtn {
+  animation: slowfall 5s;
+}
+.downbtn {
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-name: slowfall;
+  animation-name: slowfall;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}

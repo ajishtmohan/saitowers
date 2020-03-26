@@ -38,3 +38,20 @@ function showSbr(){
   document.getElementById('singlebr').style.left = '0';
   document.getElementById('accommodation').style.left = '100vw';
 }
+$(document).ready(function() {
+        var sidebar = $("#h-accommodation"); //get offset of second div
+        var offset = sidebar.offset().top; //check for top property
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= offset) {
+                    $(".sidebar").css("right","30px");
+                    $(".logo-menu").css("top", "-80px");
+                    $(".logo-menu").css("background-color", "white");
+                } else {
+                    $(".sidebar").css("right","-80px");
+                    $(".logo-menu").css("top", "0px");
+                    $(".logo-menu").css("background-color", "#1c1c1c");
+                }
+            });
+        });
+});
