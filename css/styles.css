@@ -31,28 +31,42 @@ html{
   -ms-transition:     all 0.4s ease;
   -o-transition:      all 0.4s ease;
 }
+.logo{
+  height: auto;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition:    all 0.8s ease;
+  -ms-transition:     all 0.8s ease;
+  -o-transition:      all 0.8s ease;
+}
 .logo-menu img{
   width: 90%;
   text-align: center;
-  margin-top: 15px;
-  /* padding-bottom: 15px; */
-  /* background-color: black; */
+  margin: 10px 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition:    all 0.4s ease;
+  -ms-transition:     all 0.4s ease;
+  -o-transition:      all 0.4s ease;
 }
 .menu-button{
-  width: 50%;
-  /* height: 50px; */
-  color: grey;
+  width: 49%;
+  height: 30px;
   text-align: center;
   float: left;
+  border: 1px solid black;
+  cursor: pointer;
 }
 .menu-button p{
-  padding: 15px 0;
+  color: #ccc;
+  padding: 8px 0;
   font-size: .8em;
 }
-.menu-button :hover{
+.menu-button:hover{
   color: white;
   opacity: 1;
   background-color: black;
+}
+.menu-item:hover{
+  color: white;
 }
 .menu-button input{
   /* display: none; */
@@ -812,7 +826,7 @@ html{
 }
 
 #h-services{
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   height: 100vh;
   background-size:cover;
@@ -821,27 +835,19 @@ html{
   flex-direction: row;
   justify-content:space-around;
 }
-.serve-text{
-  /* background-color: red; */
-  width:30%;
-  height: 50%;
+.hserv1{
+  height: auto;
   align-self: center;
+  background-color: grey;
 }
-.serve-text h2{
-  font-size: 5em;
-  font-weight:300;
-  color: red;
-  text-align: left;
+.hserv-cont{
+  padding: 50px;
+  width: 100%;
 }
-.serve-text p{
-  line-height: 2em;
-  text-align: left;
-}
-.serve-image{
-  width:60%;
+.hserveimage{
+  width: 100%;
   height: 50%;
-  align-self: center;
-  overflow-y: hidden;
+  overflow:hidden;
 }
 
 

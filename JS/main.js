@@ -46,12 +46,11 @@ $(document).ready(function() {
                 if ($(window).scrollTop() >= offset) {
                     $(".sidebar").css("right","30px");
                     $(".logo").css("height", "0px");
-                    $("menu-button").css("border", "1px solid white");
-                    $(".logo-menu").css("background-color", "rgba(255, 255, 255, 0.5)");
+                    $(".menu-button").css("border", "1px solid black");
+                    $(".menu-button").css("background-color", "rgba(0, 0, 0, 0.8)");
                 } else {
                     $(".sidebar").css("right","-80px");
                     $(".logo").css("height", "auto");
-                    $("menu-button").css("border", "2px solid white");
                     $(".logo-menu").css("background-color", "#1c1c1c");
                 }
             });
