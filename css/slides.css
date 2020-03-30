@@ -75,7 +75,7 @@ body{
   }
   100% {
     opacity: 0;
-    transform: scale(1.1);
+    transform: scale(1.2);
     transform-origin: center;
   }
 }
@@ -105,7 +105,7 @@ body{
 @keyframes moveP {
   0% {
     opacity: 0;
-    left: 50px;
+    left: -450px;
   }
   12.5% {
     opacity: 0;
@@ -115,10 +115,10 @@ body{
   }
   85% {
     opacity: 1;
+    left: 100px;
   }
   100% {
     opacity: 0;
-    left: 150px;
   }
 }
 

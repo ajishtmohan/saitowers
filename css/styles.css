@@ -644,7 +644,7 @@ html{
   transition: transform 0.4s;
 }
 .accoleft:hover img{
-  transform: scale(1.05);
+  transform: scale(1.1);
   transform-origin: 50% 50%;
 }
 
@@ -679,7 +679,7 @@ html{
   transition: transform 0.4s;
 }
 .accoright:hover img{
-  transform: scale(1.05);
+  transform: scale(1.1);
   transform-origin: 50% 50%;
 }
 .acco-image{
@@ -833,23 +833,42 @@ html{
   background-position: top;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content:space-between;
 }
 .hserv1{
+  width: 20%;
   height: auto;
   align-self: center;
-  background-color: grey;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
 }
-.hserv-cont{
-  padding: 50px;
-  width: 100%;
+.hserv1:hover{
+  border: 1px solid white;
+  background-color: #e6e6e6;
+  -webkit-transition: all .5s ease;
+  -moz-transition:    all .5s ease;
+  -ms-transition:     all .5s ease;
+  -o-transition:      all .5s ease;
 }
-.hserveimage{
-  width: 100%;
-  height: 50%;
-  overflow:hidden;
+.hserv1 h2{
+  font-weight: 100;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-size: 2em;
+  color: #2c28b2;
 }
-
+.hserv1 p{
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+}
+.sicon {
+  font-size: 4em;
+  color: grey;
+}
 
 #h-gallery{
   width: 100%;
