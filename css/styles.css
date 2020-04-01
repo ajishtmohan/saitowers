@@ -826,39 +826,82 @@ html{
 }
 
 #h-services{
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
   height: 100vh;
-  background-size:cover;
-  background-position: top;
+  display: flex;
+  flex-direction: column;
+}
+.hserveimage{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+.hserveimage img{
+  width: 100vw;
+  height: auto;
+  position: absolute;
+}
+.hservetext{
+  width: 60%;
+  height: auto;
+  display: block;
+  padding: 60px;
+  margin: 0 auto;
+  height: auto;
+  z-index: 5;
+}
+.hserves{
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
+  z-index: 5;
 }
-.hserv1{
+.hserv{
   width: 20%;
   height: auto;
   align-self: center;
-  padding: 40px;
+  padding: 35px;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid #ddd;
+  cursor: pointer;
 }
-.hserv1:hover{
-  border: 1px solid white;
-  background-color: #e6e6e6;
+.hserv:hover{
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #2c28b2;
   -webkit-transition: all .5s ease;
   -moz-transition:    all .5s ease;
   -ms-transition:     all .5s ease;
   -o-transition:      all .5s ease;
 }
-.hserv1 h2{
+.hserv:hover .sicon{
+  color: #2c28b2;
+  -webkit-transition: all .5s ease;
+  -moz-transition:    all .5s ease;
+  -ms-transition:     all .5s ease;
+  -o-transition:      all .5s ease;
+}
+
+#h-services h2{
   font-weight: 100;
   text-align: center;
   padding: 20px 0 10px 0;
   font-size: 2em;
   color: #2c28b2;
 }
-.hserv1 p{
+#h-services h3{
+  font-weight: 100;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.5em;
+  color: #2c28b2;
+}
+#h-services p{
   text-align: center;
   font-size: 0.8em;
   line-height: 1.5em;
@@ -866,7 +909,7 @@ html{
   margin: 0 auto;
 }
 .sicon {
-  font-size: 4em;
+  font-size: 3em;
   color: grey;
 }
 
@@ -878,28 +921,6 @@ html{
   display: flex;
   flex-direction: row;
   justify-content:center;
-}
-.gallery-text{
-  /* background-color: red; */
-  width:35%;
-  height: 50%;
-  align-self: center;
-}
-.gallery-text h2{
-  font-size: 5em;
-  font-weight:300;
-  color: red;
-  text-align: left;
-}
-.gallery-text p{
-  line-height: 2em;
-  text-align: left;
-}
-.gallery-image{
-  width:60%;
-  height: 50%;
-  align-self: center;
-  overflow-y: hidden;
 }
 
 #h-contact{
@@ -938,7 +959,7 @@ html{
 
 }
 .f-logo img{
-  width: 60%;
+  width: 80%;
   height: auto;
   margin-bottom: 10px;
   align-self: center;
