@@ -62,8 +62,8 @@
   }
 
 .hserveimage img {
-    -webkit-animation-duration: 20s;
-    animation-duration: 20s;
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
     -webkit-animation-iteration-count: infinite;

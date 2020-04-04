@@ -105,7 +105,7 @@ body{
 @keyframes moveP {
   0% {
     opacity: 0;
-    left: -450px;
+    left: 50px;
   }
   12.5% {
     opacity: 0;
@@ -115,10 +115,10 @@ body{
   }
   85% {
     opacity: 1;
-    left: 100px;
   }
   100% {
     opacity: 0;
+    left: 150px;
   }
 }
 
