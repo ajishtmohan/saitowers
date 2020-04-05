@@ -40,7 +40,7 @@
       <div id="nav-window">
         <div class="nav-menus">
           <ul>
-            <li onclick="closemenu()"><a href="#">Home</a></li>
+            <li onclick="closemenu()"><a href="index.html">Home</a></li>
             <li onclick="showAcco()"><a href="#">Accommodation</a></li>
             <li onclick="showDine()"><a href="#">Dining</a></li>
             <li onclick="showServ()"><a href="#">Services</a></li>
@@ -165,9 +165,117 @@
       </div>
 
       <div id="roombooking">
+      </div>
 
+      <div class="room-sidebar">
+        <a href="#"><i class="fas fa-hotel"></i></a>
+        <a href="#room1">1</a>
+        <a href="#room2">2</a>
+        <a href="#room3">3</a>
       </div>
     </nav>
+
+    <section id="roomhome">
+      <img src="images/lobby.webp" alt="">
+      <div class="roomhometext">
+        <h2>Rooms</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="downbtn">
+        <div class="circlebtn">
+            <p><a href="#room1"><i class="fas fa-chevron-down"></i></a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="room1">
+      <div class="roomtype">
+        <div class="room-image">
+          <img src="images/R06.webp" alt="">
+        </div>
+        <div class="room-text">
+          <h2>Standard Non AC</h2>
+          <p>Available both in single and double bedded options</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <h3>Facilities</h3>
+          <p><strong>Complimenary Breakfast,</strong> 24 Hr Room Service, Laundry, Mini Bar, Free WiFi</p>
+          <h3 class="tariff">Tariff</h3>
+          <div class="tariff1">
+            <h2>Rs. 1,700</h2>
+            <p class="occu">For single occupancy</p>
+          </div>
+          <div class="tariff2">
+            <h2>Rs. 2,450</h2>
+            <p>For double occupancy</p>
+          </div>
+          <h3><a href="#">BOOK NOW</a></h3>
+        </div>
+      </div>
+      <div class="downbtn">
+        <div class="circlebtn">
+            <p><a href="#room2"><i class="fas fa-chevron-down"></i></a></p>
+        </div>
+      </div>
+  </section>
+  <section id="room2">
+    <div class="roomtype">
+      <div class="room-image">
+        <img src="images/R09.webp" alt="">
+      </div>
+      <div class="room-text">
+        <h2>Standard Room</h2>
+        <p>Available both in single and double bedded options</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <h3>Facilities</h3>
+        <p><strong>Complimenary Breakfast,</strong> 24 Hr Room Service, Laundry, Mini Bar, Free WiFi</p>
+        <h3 class="tariff">Tariff</h3>
+        <div class="tariff1">
+          <h2>Rs. 2,400</h2>
+          <p class="occu">For single occupancy</p>
+        </div>
+        <div class="tariff2">
+          <h2>Rs. 3,000</h2>
+          <p>For double occupancy</p>
+        </div>
+        <h3><a href="#">BOOK NOW</a></h3>
+      </div>
+    </div>
+    <div class="downbtn">
+      <div class="circlebtn">
+          <p><a href="#room3"><i class="fas fa-chevron-down"></i></a></p>
+      </div>
+    </div>
+</section>
+<section id="room3">
+  <div class="roomtype">
+    <div class="room-image">
+      <img src="images/R08.webp" alt="">
+    </div>
+    <div class="room-text">
+      <h2>Executive Room</h2>
+      <p>Available both in single and double bedded options</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <h3>Facilities</h3>
+      <p><strong>Complimenary Breakfast,</strong> 24 Hr Room Service, Laundry, Mini Bar, Free WiFi</p>
+      <h3 class="tariff">Tariff</h3>
+      <div class="tariff1">
+        <h2>Rs. 2,800</h2>
+        <p class="occu">For single occupancy</p>
+      </div>
+      <div class="tariff2">
+        <h2>Rs. 3,300</h2>
+        <p>For double occupancy</p>
+      </div>
+      <h3><a href="#">BOOK NOW</a></h3>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="roomback">
+  <img src="images/lamp1.webp" alt="">
+
+</section>
+
 
 
     <section id="h-contact">
@@ -204,23 +312,14 @@
         </div>
       </div>
     </section>
-
     <div class="footer">
       <p>© All rights reserved <span><a href="#">Terms and Conditions</a></span> <a href="#">Privacy Policy</a> <a href="#">Site Map</a> </p>
     </div>
 
-    <script src="JS/main.js" charset="utf-8"></script>
-    <script type="text/javascript">
-			jQuery(document).ready(function(){
-        jQuery("#gallery").unitegallery({
-          tiles_col_width: 350,
-          tile_enable_textpanel: false,
-          lightbox_slider_control_zoom:false,
-          lightbox_show_textpanel: false,
-          tiles_space_between_cols: 1
-        })
-        });
-		</script>
+
+
+
+<script src="JS/rooms.js" charset="utf-8"></script>
 </body>
 
 </html>

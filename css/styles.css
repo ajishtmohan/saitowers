@@ -7,7 +7,10 @@ html{
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   overflow-x:hidden;
+  /* opacity: 0; */
+  transition: opacity .5s;
 }
+
 
 ::-webkit-scrollbar {
     width: 0;
@@ -33,6 +36,7 @@ html{
 }
 .logo{
   height: auto;
+  transition: 0.8s;
   -webkit-transition: all 0.8s ease;
   -moz-transition:    all 0.8s ease;
   -ms-transition:     all 0.8s ease;
@@ -1282,3 +1286,166 @@ html{
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
+.roomback{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  bottom:0px;
+  right: 0;
+  z-index: -1;
+}
+.roomback img{
+  width: 100%;
+  height: auto;
+}
+#roomhome{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.roomhometext{
+  display: block;
+  position: absolute;
+  text-align: center;
+  bottom: 150px;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  color: white;
+}
+.roomhometext p{
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+}
+.roomhometext h2{
+  font-weight: 100;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-size: 2em;
+}
+#room1, #room2, #room3{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.roomtype{
+  width: 75%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.room-image{
+  width: 47%;
+  height: auto;
+  background-color: grey;
+  overflow: hidden;
+}
+.room-image img{
+  width: auto;
+  height: 100%;
+  transform: translate(50%, 50%);
+
+}
+.room-text{
+  width: 47%;
+}
+.room-text p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.room-text h2{
+  font-weight: 100;
+  font-size: 2em;
+  color: #2c28b2;
+}
+.room-text h3{
+  font-weight: 100;
+  font-size: 1.2em;
+  color: grey;
+}
+.tariff1{
+  width: 30%;
+  padding-right: 15px;
+  height: auto;
+  border-right: 1px solid grey;
+  float: left;
+  display: block;
+  margin-bottom: 20px;
+}
+.tariff2{
+  width: 30%;
+  padding-left: 15px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+.roomtype a{
+  text-decoration: none;
+  color: #2c28b2;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.roomtype a:hover{
+  letter-spacing: 2px;
+}
+.tariff1 p{
+  padding: 0;
+}
+.tariff2 p{
+  padding: 0;
+}
+.room-sidebar{
+  position: fixed;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .5;
+  width: 50px;
+  height: auto;
+  right: -80px;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition:    all 0.4s ease;
+  -ms-transition:     all 0.4s ease;
+  -o-transition:      all 0.4s ease;
+  z-index: 900;
+}
+.room-sidebar:hover{
+  opacity: 1;
+}
+.room-sidebar > * {
+  color: grey;
+  font-size: 1em;
+  text-align: center;
+  background-color: white;
+  padding: 15px 0 10px 0;
+  display: block;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  opacity: .8;
+}
+
+.room-sidebar a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition:    all 0.4s ease;
+  -ms-transition:     all 0.4s ease;
+  -o-transition:      all 0.4s ease;
+}
