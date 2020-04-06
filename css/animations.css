@@ -70,11 +70,60 @@
     animation-iteration-count: infinite;
   }
 .room-image img {
-        -webkit-animation-duration: 8s;
-        animation-duration: 8s;
-        -webkit-animation-name: zoomIn;
-        animation-name: zoomIn;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-      }
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+#roomhome img {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+#suitehome img {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+#suite1 img {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+#suite2 img {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+#suite3 img {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  #limfhome img {
+      -webkit-animation-duration: 8s;
+      animation-duration: 8s;
+      -webkit-animation-name: zoomIn;
+      animation-name: zoomIn;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
 }

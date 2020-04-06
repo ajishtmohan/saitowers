@@ -7,7 +7,6 @@ html{
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   overflow-x:hidden;
-  /* opacity: 0; */
   transition: opacity .5s;
 }
 
@@ -1349,7 +1348,6 @@ html{
 .room-image{
   width: 47%;
   height: auto;
-  background-color: grey;
   overflow: hidden;
 }
 .room-image img{
@@ -1401,6 +1399,289 @@ html{
 }
 .roomtype a:hover{
   letter-spacing: 2px;
+}
+.tariff1 p{
+  padding: 0;
+}
+.tariff2 p{
+  padding: 0;
+}
+.room-sidebar{
+  position: fixed;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .5;
+  width: 50px;
+  height: auto;
+  right: -80px;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition:    all 0.4s ease;
+  -ms-transition:     all 0.4s ease;
+  -o-transition:      all 0.4s ease;
+  z-index: 900;
+}
+.room-sidebar:hover{
+  opacity: 1;
+}
+.room-sidebar > * {
+  color: grey;
+  font-size: 1em;
+  text-align: center;
+  background-color: white;
+  padding: 15px 0 10px 0;
+  display: block;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  opacity: .8;
+}
+
+.room-sidebar a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition:    all 0.4s ease;
+  -ms-transition:     all 0.4s ease;
+  -o-transition:      all 0.4s ease;
+}
+
+#suitehome{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+#suitehome img{
+  position: absolute;
+  bottom: -200px;
+}
+.suitehometext{
+  display: block;
+  position: absolute;
+  text-align: center;
+  bottom: 150px;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  color: white;
+}
+.roomhometext p{
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+}
+.roomhometext h2{
+  font-weight: 100;
+  text-align: center;
+  padding: 20px 0 10px 0;
+  font-size: 2em;
+}
+#suite1, #suite2, #suite3{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content:flex-start;
+  overflow: hidden;
+}
+#suite1 img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+#suite2 img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+.suite-text{
+  width: 35%;
+  padding: 25px;
+  position: absolute;
+  align-self: center;
+  left: 50px;
+  background-color: rgba(0, 0, 0, 0.8)
+}
+.suite-text p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  color: #DCDCDC;
+}
+.suite-text h2{
+  font-weight: 100;
+  font-size: 2em;
+  color: white;
+}
+.suite-text h3{
+  font-weight: 100;
+  font-size: 1.2em;
+  color: grey;
+}
+.tariff1{
+  width: 30%;
+  padding-right: 15px;
+  height: auto;
+  border-right: 1px solid grey;
+  float: left;
+  display: block;
+  margin-bottom: 20px;
+}
+.tariff2{
+  width: 30%;
+  padding-left: 15px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+.suite-text a{
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.suite-text a:hover{
+  letter-spacing: 2px;
+  color: white;
+}
+.tariff1 p{
+  padding: 0;
+}
+.tariff2 p{
+  padding: 0;
+}
+.room-sidebar{
+  position: fixed;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: .5;
+  width: 50px;
+  height: auto;
+  right: -80px;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition:    all 0.4s ease;
+  -ms-transition:     all 0.4s ease;
+  -o-transition:      all 0.4s ease;
+  z-index: 900;
+}
+.room-sidebar:hover{
+  opacity: 1;
+}
+.room-sidebar > * {
+  color: grey;
+  font-size: 1em;
+  text-align: center;
+  background-color: white;
+  padding: 15px 0 10px 0;
+  display: block;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  opacity: .8;
+}
+
+.room-sidebar a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition:    all 0.4s ease;
+  -ms-transition:     all 0.4s ease;
+  -o-transition:      all 0.4s ease;
+}
+
+/* LOVE IS MY FORM  */
+
+#limfhome{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+#limfhome img{
+  position: absolute;
+  top: -100px;
+}
+.limfhometext{
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  color: white;
+  left: 50%;
+  bottom: 15%;
+  transform: translate(-50%, -50%);
+}
+.limfhometext p{
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+}
+.limfhometext h2{
+  font-weight: 100;
+  text-align: center;
+  font-size: 2em;
+}
+#limf2{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  overflow: hidden;
+  text-align: center;
+}
+#limf2 img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -200px;
+}
+.limf2-text{
+  width: 35%;
+  padding: 25px;
+  position: absolute;
+  align-self: center;
+  bottom: 400px;
+}
+.limf2-text p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  color: black;
+}
+.limf2-text h2{
+  font-weight: 100;
+  font-size: 2em;
+  color: #2c28b2;
+}
+.limf2-text a{
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.limf2-text a:hover{
+  letter-spacing: 2px;
+  color: white;
 }
 .tariff1 p{
   padding: 0;
