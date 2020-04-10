@@ -126,4 +126,12 @@
       -webkit-animation-iteration-count: infinite;
       animation-iteration-count: infinite;
     }
+#limf1 img {
+    -webkit-animation-duration: 8s;
+    animation-duration: 8s;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
 }

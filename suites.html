@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="theme-color" content="#1c1c1c"/>
+  <meta name="theme-color" content="#1c1c1c" />
   <meta name="author" content="Ajish T Mohan">
   <title>Sai Towers - Suites</title>
   <link rel="stylesheet" href="css/styles.css">
@@ -16,224 +16,175 @@
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-	<script type='text/javascript' src='JS/unitegallery.min.js'></script>
-	<link rel='stylesheet' href='css/unite-gallery.css' type='text/css'/>
-	<script type='text/javascript' src='JS/ug-theme-tiles.js'></script>
-	<link rel='stylesheet' href='css/ug-theme-default.css' type='text/css'/>
+  <script type='text/javascript' src='JS/unitegallery.min.js'></script>
+  <link rel='stylesheet' href='css/unite-gallery.css' type='text/css' />
+  <script type='text/javascript' src='JS/ug-theme-tiles.js'></script>
+  <link rel='stylesheet' href='css/ug-theme-default.css' type='text/css' />
 
 </head>
 
 <body onload="switchImage('slideImg')">
   <nav>
-      <div class="logo-menu">
-        <div class="logo">
-          <img src="images/STLogo.png" alt="">
-        </div>
-        <div class="menu-button">
-          <p class="menu-item" onclick="toggle()">MENU</p>
-        </div>
-        <div class="menu-button">
-          <p class="menu-item" onclick="booknow();myFunction()">BOOK</p>
-        </div>
+    <div class="logo-menu">
+      <div class="logo">
+        <a href="index.html"><img src="images/STLogo.png" alt=""></a>
       </div>
-
-      <div id="nav-window">
-        <div class="nav-menus">
-          <ul>
-            <li onclick="closemenu()"><a href="index.html">Home</a></li>
-            <li onclick="showAcco()"><a href="#">Accommodation</a></li>
-            <li onclick="showDine()"><a href="#">Dining</a></li>
-            <li onclick="showServ()"><a href="#">Services</a></li>
-            <li onclick="closemenu()"><a href="#h-gallery">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-          <ul>
-            <li id="close" class="nav-btn" onclick="closemenu()"><a href="#">close</a></li>
-          </ul>
-        </div>
+      <div class="menu-button">
+        <p class="menu-item" onclick="menu()">MENU</p>
       </div>
-
-      <div id="accommodation">
-        <div class="acco-menus">
-          <div class="acco-room">
-            <div class="acco-m-image">
-              <img src="images/room2-1.webp" alt="">
-            </div>
-            <h2>Rooms</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-          </div>
-          <div class="acco-suite">
-            <div class="acco-m-image">
-              <img src="images/room2-2.webp" alt="">
-            </div>
-            <h2>suites</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-          </div>
-          <ul>
-            <li id="close" class="nav-btn" onclick="close_acco_menu()"><a href="#">previous</a></li>
-            <li id="close" class="nav-btn" onclick="close_acco_menu()"><a href="#">close</a></li>
-          </ul>
-        </div>
+      <div class="menu-button">
+        <p class="menu-item" onclick="booknow();myFunction()">BOOK</p>
       </div>
+    </div>
 
-      <div id="singlebr">
-        <div class="singlebrCont">
-          <div class="singlebrimg">
-          </div>
-          <div class="singlebrtext">
-            <h2>Single Bedroom</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Facilities: <i class="fas fa-wifi">Wifi</i><i class="fas fa-concierge-bell">Room Service</i></p>
-            <h2>Rs. 2,999/-</h2>
-            <p>Per Night / Couple</p>
-            <a href="#">PREVIOUS</a> <a href="#">KNOW MORE</a>
-          </div>
-        </div>
-
+    <div id="nav-window">
+      <div class="nav-menus">
+        <ul>
+          <li onclick="closemenu()"><a href="index.html">Home</a></li>
+          <li onclick="showAcco()"><a href="#">Accommodation</a></li>
+          <li onclick="showDine()"><a href="#">Dining</a></li>
+        </ul>
+        <ul>
+          <li id="close" class="nav-btn" onclick="closemenu()"><a href="#">close</a></li>
+        </ul>
       </div>
+    </div>
 
-      <div id="dining">
-        <div class="dine-menus">
-          <div class="limf">
-            <div class="limf-image">
-              <img src="images/food.webp" alt="">
-            </div>
-            <h2>Love Is My Form</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div id="accommodation">
+      <div class="acco-menus">
+        <div onclick="transitionToPage('rooms.html')" class="acco-room">
+          <div class="acco-m-image">
+            <img src="images/room2-1.webp" alt="">
           </div>
-
-          <div class="vista">
-            <div class="limf-image">
-              <img src="images/rest1.webp" alt="">
-            </div>
-            <h2>Prasanthi Vista</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-          <ul>
-            <li id="close" class="nav-btn" onclick="close_acco_menu()"><a href="#">previous</a></li>
-            <li id="close" class="nav-btn" onclick="close_acco_menu()"><a href="#">close</a></li>
-          </ul>
+          <h2>Rooms</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-      </div>
-
-      <div id="services">
-        <div class="serv-menus">
-          <div class="s-menu-item-cont">
-            <div class="s-menu-item">
-              <p class="smicon"><i class="fas fa-wifi sicon"></i></p>
-              <h2>Free Wifi</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div class="s-menu-item">
-              <p class="smicon"><i class="fas fa-concierge-bell sicon"></i></p>
-              <h2>Concierge</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div class="s-menu-item">
-              <p class="smicon"><i class="fas fa-taxi sicon"></i></p>
-              <h2>Travel</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        <div onclick="closemenu()" class="acco-suite">
+          <div class="acco-m-image">
+            <img src="images/room2-2.webp" alt="">
           </div>
-          </div>
-
+          <h2>suites</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
         <ul>
           <li id="close" class="nav-btn" onclick="close_acco_menu()"><a href="#">previous</a></li>
-          <li id="close" class="nav-btn" onclick="close_acco_menu()"><a href="#">close</a></li>
+          <li id="close" class="nav-btn" onclick="closemenu()"><a href="#">close</a></li>
         </ul>
-        </div>
       </div>
+    </div>
 
-      <div id="booknow">
-        <div class="detailinput">
-          <h3>BOOK ROOM</h3>
-          <div class="date">
-            <p>ARRIVAL</p>
-            <p id="a-date">12</p>
-            <p id="a-month">march</p>
+
+    <div id="dining">
+      <div class="dine-menus">
+        <div onclick="transitionToPage('LoveIsMyForm.html')" class="limf">
+          <div class="limf-image">
+            <img src="images/food.webp" alt="">
           </div>
-          <div class="date">
-            <p>DEPARTURE</p>
-            <p id="d-date">14</p>
-            <p id="d-month">march</p>
+          <h2>Love Is My Form</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div onclick="transitionToPage('Vista.html')" class="vista">
+          <div class="limf-image">
+            <img src="images/rest1.webp" alt="">
           </div>
-          <div class="check">
-            <p><a href="#">CHECK AVAILABILITY</a></p>
-          </div>
+          <h2>Prasanthi Vista</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <ul>
+          <li id="close" class="nav-btn" onclick="close_acco_menu()"><a href="#">previous</a></li>
+          <li id="close" class="nav-btn" onclick="closemenu()"><a href="#">close</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="booknow">
+      <div class="detailinput">
+        <h3>BOOK ROOM</h3>
+        <div class="date">
+          <p>ARRIVAL</p>
+          <p id="a-date">12</p>
+          <p id="a-month">march</p>
+        </div>
+        <div class="date">
+          <p>DEPARTURE</p>
+          <p id="d-date">14</p>
+          <p id="d-month">march</p>
+        </div>
+        <div class="check">
+          <p><a href="#">CHECK AVAILABILITY</a></p>
         </div>
       </div>
+    </div>
 
-      <div id="roombooking">
-      </div>
+    <div class="suitesidebar">
+      <a href="#"><i class="fas fa-hotel"></i></a>
+      <a href="#suite1"><i class="far fa-dot-circle"></i></a>
+      <a href="#suite2"><i class="far fa-dot-circle"></i></a>
+      <a href="#suite3"><i class="far fa-dot-circle"></i></a>
+      <a href="#h-contact"><i class="fas fa-phone"></i></a>
+    </div>
+  </nav>
 
-      <div class="room-sidebar">
-        <a href="#"><i class="fas fa-hotel"></i></a>
-        <a href="#suite1"><i class="fas fa-key"></i></a>
-        <a href="#suite2"><i class="fas fa-key"></i></a>
-        <a href="#suite3"><i class="fas fa-key"></i></a>
+  <section id="suitehome">
+    <img src="images/suites_home.webp" alt="">
+    <div class="roomhometext">
+      <h2>Suites</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="downbtn">
+      <div class="circlebtn">
+        <p><a href="#suite1"><i class="fas fa-chevron-down"></i></a></p>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <section id="suitehome">
-      <img src="images/suites_home.webp" alt="">
-      <div class="roomhometext">
-        <h2>Suites</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <section id="suite1">
+    <img src="images/suite1.webp" alt="">
+    <div class="suite-text1">
+      <h2>Sai Towers Suite</h2>
+      <p>Available both in single and double bedded options</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <h3>Facilities</h3>
+      <p><strong>Complimenary Breakfast,</strong> 24 Hr Room Service, Laundry, Mini Bar, Free WiFi</p>
+      <h3 class="tariff">Tariff</h3>
+      <div class="tariff1">
+        <h2>Rs. 5,000</h2>
+        <p class="occu">For single occupancy</p>
       </div>
-      <div class="downbtn">
-        <div class="circlebtn">
-            <p><a href="#suite1"><i class="fas fa-chevron-down"></i></a></p>
-        </div>
+      <h3><a href="#">BOOK NOW</a></h3>
+    </div>
+    <div class="downbtn">
+      <div class="circlebtn">
+        <p><a href="#suite2"><i class="fas fa-chevron-down"></i></a></p>
       </div>
-    </section>
-
-    <section id="suite1">
-      <img src="images/suite1.webp" alt="">
-        <div class="suite-text">
-          <h2>Sai Towers Suite</h2>
-          <p>Available both in single and double bedded options</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-          <h3>Facilities</h3>
-          <p><strong>Complimenary Breakfast,</strong> 24 Hr Room Service, Laundry, Mini Bar, Free WiFi</p>
-          <h3 class="tariff">Tariff</h3>
-          <div class="tariff1">
-            <h2>Rs. 5,000</h2>
-            <p class="occu">For single occupancy</p>
-          </div>
-          <h3><a href="#">BOOK NOW</a></h3>
-        </div>
-      <div class="downbtn">
-        <div class="circlebtn">
-            <p><a href="#suite2"><i class="fas fa-chevron-down"></i></a></p>
-        </div>
-      </div>
+    </div>
   </section>
   <section id="suite2">
     <img src="images/suite2.webp" alt="">
-      <div class="suite-text">
-        <h2>Sai Towers Premium Suite</h2>
-        <p>Available both in single and double bedded options</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-        <h3>Facilities</h3>
-        <p><strong>Complimenary Breakfast,</strong> 24 Hr Room Service, Laundry, Mini Bar, Free WiFi</p>
-        <h3 class="tariff">Tariff</h3>
-        <div class="tariff1">
-          <h2>Rs. 5,600</h2>
-          <p class="occu">For single occupancy</p>
-        </div>
-        <h3><a href="#">BOOK NOW</a></h3>
+    <div class="suite-text2">
+      <h2>Sai Towers Premium Suite</h2>
+      <p>Available both in single and double bedded options</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <h3>Facilities</h3>
+      <p><strong>Complimenary Breakfast,</strong> 24 Hr Room Service, Laundry, Mini Bar, Free WiFi</p>
+      <h3 class="tariff">Tariff</h3>
+      <div class="tariff1">
+        <h2>Rs. 5,600</h2>
+        <p class="occu">For single occupancy</p>
       </div>
+      <h3><a href="#">BOOK NOW</a></h3>
+    </div>
     <div class="downbtn">
       <div class="circlebtn">
-          <p><a href="#suite3"><i class="fas fa-chevron-down"></i></a></p>
+        <p><a href="#suite3"><i class="fas fa-chevron-down"></i></a></p>
       </div>
     </div>
-</section>
+  </section>
 
-<section id="suite3">
-  <img src="images/suite3.webp" alt="">
-    <div class="suite-text">
+  <section id="suite3">
+    <img src="images/suite3.webp" alt="">
+    <div class="suite-text3">
       <h2>Sai Towers Family Suite</h2>
       <p>Available both in single and double bedded options</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -246,57 +197,70 @@
       </div>
       <h3><a href="#">BOOK NOW</a></h3>
     </div>
-  <div class="downbtn">
-    <div class="circlebtn">
+    <div class="downbtn">
+      <div class="circlebtn">
         <p><a href="#h-contact"><i class="fas fa-chevron-down"></i></a></p>
-    </div>
-  </div>
-</section>
-
-
-
-    <section id="h-contact">
-      <div class="cont-container">
-
-        <div class="f-logo">
-          <img src="images/STLogo.png" alt="">
-        </div>
-
-        <div class="address">
-          <h4>Contact</h4>
-          <p>3/3573, Prasanthi Nilayam, Main Road, Puttaparthi Andhra Pradesh 515134</p>
-          <p>Phone: 085552 87270</p><br>
-          <h4>Follow Us</h4>
-          <div class="s-med">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
-            <a href="#"><i class="fab fa-instagram-square"></i></a>
-          </div>
-
-        </div>
-        <div class="qlinks">
-          <h4>Quick Links</h4>
-          <a href="#">Home</a>
-          <a href="#">Stay</a>
-          <a href="#">Book Now</a>
-          <a href="#">Dining</a>
-          <a href="#">Services</a>
-          <a href="#">About Us</a>
-
-        </div>
-        <div class="map">
-          <h4>Location</h4>
-        </div>
       </div>
-    </section>
-    <div class="footer">
-      <p>© All rights reserved <span><a href="#">Terms and Conditions</a></span> <a href="#">Privacy Policy</a> <a href="#">Site Map</a> </p>
     </div>
+  </section>
+
+
+
+  <section id="h-contact">
+    <div class="cont-container">
+
+      <div class="f-logo">
+        <img src="images/STLogo.png" alt="">
+      </div>
+
+      <div class="address">
+        <h4>Contact</h4>
+        <p>3/3573, Prasanthi Nilayam, Main Road, Puttaparthi Andhra Pradesh 515134</p>
+        <p>Phone: 085552 87270</p><br>
+        <h4>Follow Us</h4>
+        <div class="s-med">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+        </div>
+
+      </div>
+      <div class="qlinks">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="mainql"><a href="#h-accommodation">Accommodation</a>
+            <ul>
+              <li class="subql"><a href="rooms.html">Rooms</a></li>
+              <li class="subql"><a href="suites.html">Suites</a></li>
+            </ul>
+          </li>
+          <li class="mainql"><a href="#h-restaurant">Restaurant</a>
+            <ul>
+              <li class="subql"><a href="LoveIsMyForm.html">Love Is My Form</a></li>
+              <li class="subql"><a href="vista.html">Prasanthi Vista</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Book Now</a></li>
+          <li><a href="#h-services">Services</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+
+      </div>
+      <div class="map">
+        <h4>Location</h4>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>© All rights reserved <span><a href="#">Terms and Conditions</a></span> <a href="#">Privacy Policy</a> <a href="#">Site Map</a> </p>
+  </div>
 
 
 
 
-<script src="JS/suites.js" charset="utf-8"></script>
+  <script src="JS/suites.js" charset="utf-8"></script>
 </body>
 
 </html>

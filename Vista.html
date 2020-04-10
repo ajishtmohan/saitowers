@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="theme-color" content="#1c1c1c" />
   <meta name="author" content="Ajish T Mohan">
-  <title>Sai Towers</title>
+  <title>Sai Towers - Prashanti Vista</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/mstyles.css">
   <link rel="stylesheet" href="css/animations.css">
@@ -27,7 +27,7 @@
   <nav>
     <div class="logo-menu">
       <div class="logo">
-        <a href="#"><img src="images/STLogo.png" alt=""></a>
+        <a href="index.html"><img src="images/STLogo.png" alt=""></a>
       </div>
       <div class="menu-button">
         <p class="menu-item" onclick="menu()">MENU</p>
@@ -40,12 +40,9 @@
     <div id="nav-window">
       <div class="nav-menus">
         <ul>
-          <li onclick="closemenu()"><a href="#">Home</a></li>
+          <li onclick="closemenu()"><a href="index.html">Home</a></li>
           <li onclick="showAcco()"><a href="#">Accommodation</a></li>
           <li onclick="showDine()"><a href="#">Dining</a></li>
-          <li onclick="showServ()"><a href="#">Services</a></li>
-          <li onclick="closemenu()"><a href="#h-gallery">Gallery</a></li>
-          <li onclick="closemenu()"><a href="#h-contact">Contact Us</a></li>
         </ul>
         <ul>
           <li id="close" class="nav-btn" onclick="closemenu()"><a href="#">close</a></li>
@@ -86,7 +83,7 @@
           <h2>Love Is My Form</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div onclick="transitionToPage('Vista.html')" class="vista">
+        <div onclick="closemenu()" class="vista">
           <div class="limf-image">
             <img src="images/rest1.webp" alt="">
           </div>
@@ -146,144 +143,66 @@
       </div>
     </div>
 
-    <div class="sidebar">
-      <a href="#"><i class="fas fa-home"></i></a>
-      <a href="#h-accommodation"><i class="fas fa-hotel"></i></a>
-      <a href="#h-restaurant"><i class="fas fa-utensils"></i></a>
-      <a href="#h-services"><i class="fas fa-taxi"></i></i></a>
-      <a href="#h-gallery"><i class="fas fa-camera-retro"></i></a>
+    <div class="vistasidebar">
+      <a href="#"><i class="fas fa-utensils"></i></i></a>
+      <a href="#vista1"><i class="far fa-dot-circle"></i></a>
+      <a href="#vista2"><i class="far fa-dot-circle"></i></a>
+      <a href="#vista3"><i class="far fa-dot-circle"></i></a>
       <a href="#h-contact"><i class="fas fa-phone"></i></a>
     </div>
   </nav>
 
-
-
-  <section id="home">
-    <div class="slide slide1">
-      <img class="bimage" src="images/hotel1.webp" alt="">
-      <h1>Luxurious Stay</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="slide slide2">
-      <img class="bimage" src="images/room2-2.webp" alt="">
-      <h1>Sai Towers Suites</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="slide slide3">
-      <img class="bimage" src="images/dining.webp" alt="">
-      <h1>Love Is My Form</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="slide slide4">
-      <img class="bimage" src="images/jonathan.webp" alt="">
-      <h1>Prasanthi Vista</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
-    <div class="slide slide5">
-      <img class="bimage" src="images/taxi.webp" alt="">
-      <h1>Services</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <section id="vistahome">
+    <img src="images/rooftophome.webp" alt="">
+    <div class="limfhometext">
+      <h2>Prashanti Vista</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <div class="downbtn">
       <div class="circlebtn">
-        <p><a href="#h-accommodation"><i class="fas fa-chevron-down"></i></a></p>
-      </div>
-    </div>
-
-
-
-
-  </section>
-
-  <section id="h-accommodation">
-    <div class="accoleft">
-      <div class="acco-image">
-        <img src="images/room2-1.webp" alt="">
-      </div>
-      <h2>Rooms</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p><a onclick="transitionToPage('rooms.html')" class="know">KNOW MORE</a></p>
-    </div>
-
-    <div class="accoright">
-      <div class="acco-image">
-        <img src="images/room2-2.webp" alt="">
-      </div>
-      <h2>Suites</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p><a onclick="transitionToPage('suites.html')" class="know" href="#">KNOW MORE</a></p>
-    </div>
-  </section>
-
-  <section id="h-restaurant">
-    <div class="restleft">
-      <img src="images/food.webp" alt="">
-      <div class="restLtextbox">
-        <h2>Love Is My Form</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p><a class="res-know" href="#">KNOW MORE</a></p>
-      </div>
-
-    </div>
-    <div class="restright">
-      <img src="images/rest1.webp" alt="">
-      <div class="restRtextbox">
-        <h2>Prashanti Vista</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <p><a class="res-know" href="#">KNOW MORE</a></p>
+        <p><a href="#vista1"><i class="fas fa-chevron-down"></i></a></p>
       </div>
     </div>
   </section>
 
-  <section id="h-services">
-    <div class="hserveimage">
-      <img src="images/rest23.webp" alt="">
+  <section id="vista1">
+    <img src="images/rooftop4.webp" alt="">
+    <div class="vista1-text">
+      <h2>See the world from above</h2>
+      <p>What makes food writing different from other forms of writing is its focus on the senses and the pleasure and enjoyment that ensues. You want readers to see the colors of a ripe peach, feel its fuzzy down, smell its ripeness, hear the
+        tearing crunch when biting into it, and taste its tangy flesh.</p>
     </div>
-    <div class="hservetext">
-      <h2>You can avail these services</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </div>
-    <div class="hserves">
-      <div class="hserv">
-        <p class="sicon"><i class="fas fa-wifi sicon"></i></p>
-        <h3>Free Wifi</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-      </div>
-      <div class="hserv">
-        <p class="sicon"><i class="fas fa-concierge-bell sicon"></i></p>
-        <h3>Concierge</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-      </div>
-      <div class="hserv">
-        <p><i class="fas fa-taxi sicon"></i></p>
-        <h3>Travel Desk</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+    <div class="downbtn">
+      <div class="circlebtn">
+        <p><a href="#vista2"><i class="fas fa-chevron-down"></i></a></p>
       </div>
     </div>
-
   </section>
 
-  <section id="h-gallery">
-    <div class="gal-cont">
-      <div id="gallery" style="display:none;">
-        <img alt="Image 1 Title" src="images/thumb/R01.webp" data-image="images/R01.webp" data-description="Image 1 Description">
+  <section id="vista2">
+    <img src="images/diningtable2.webp" alt="">
+      <div class="vista2-text">
+        <h2>Spice up the sauce with a few similes.</h2>
+        <p>Since describing food is a big part of food writing, you need as many tools as possible to get the job done. Similes compare two unlike things, using “like” or “as.” They’re fun and imaginative, giving you the chance to insert images that
+          might seem a little incongruous, but work well anyway.</p>
+      </div>
+    <div class="downbtn">
+      <div class="circlebtn">
+        <p><a href="#vista3"><i class="fas fa-chevron-down"></i></a></p>
+      </div>
+    </div>
+  </section>
 
-        <img alt="Image 2 Title" src="images/thumb/R02.webp" data-image="images/R02.webp" data-description="Image 2 Description">
-
-        <img alt="Image 3 Title" src="images/thumb/R03.webp" data-image="images/R03.webp" data-description="Image 3 Description">
-
-        <img alt="Image 4 Title" src="images/thumb/R04.webp" data-image="images/R04.webp" data-description="Image 4 Description">
-
-        <img alt="Image 5 Title" src="images/thumb/R05.webp" data-image="images/R05.webp" data-description="Image 5 Description">
-
-        <img alt="Image 6 Title" src="images/thumb/R06.webp" data-image="images/R06.webp" data-description="Image 6 Description">
-
-        <img alt="Image 7 Title" src="images/thumb/R07.webp" data-image="images/R07.webp" data-description="Image 7 Description">
-
-        <img alt="Image 8 Title" src="images/thumb/R08.webp" data-image="images/R08.webp" data-description="Image 8 Description">
-
-        <img alt="Image 9 Title" src="images/thumb/R09.webp" data-image="images/R09.webp" data-description="Image 9 Description">
+  <section id="vista3">
+    <img src="images/chef2.webp" alt="">
+      <div class="vista3-text">
+        <h2>Spice up the sauce with a few similes.</h2>
+        <p>Since describing food is a big part of food writing, you need as many tools as possible to get the job done. Similes compare two unlike things, using “like” or “as.” They’re fun and imaginative, giving you the chance to insert images that
+          might seem a little incongruous, but work well anyway.</p>
+      </div>
+    <div class="downbtn">
+      <div class="circlebtn">
+        <p><a href="#h-contact"><i class="fas fa-chevron-down"></i></a></p>
       </div>
     </div>
   </section>
@@ -339,19 +258,10 @@
     <p>© All rights reserved <span><a href="#">Terms and Conditions</a></span> <a href="#">Privacy Policy</a> <a href="#">Site Map</a> </p>
   </div>
 
-  <script src="JS/main.js" charset="utf-8"></script>
-  <script src="JS/home.js" charset="utf-8"></script>
-  <script type="text/javascript">
-    jQuery(document).ready(function() {
-      jQuery("#gallery").unitegallery({
-        tiles_col_width: 350,
-        tile_enable_textpanel: false,
-        lightbox_slider_control_zoom: false,
-        lightbox_show_textpanel: false,
-        tiles_space_between_cols: 1
-      })
-    });
-  </script>
+
+
+
+  <script src="JS/vista.js" charset="utf-8"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-        var sidebar = $("#suite1"); //get offset of second div
+        var sidebar = $("#limf1"); //get offset of second div
         var offset = sidebar.offset().top; //check for top property
         $(function () {
             $(window).scroll(function () {
@@ -13,62 +13,45 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-        var sidebar = $("#suite1"); //get offset of second div
+        var sidebar = $("#limf1"); //get offset of second div
         var offset = sidebar.offset().top; //check for top property
         $(function () {
             $(window).scroll(function () {
                 if ($(window).scrollTop() >= offset) {
-                    $(".suitesidebar").css("right","30px");
+                    $(".limf-sidebar").css("right","30px");
                 } else {
-                    $(".suitesidebar").css("right","-80px");
+                    $(".limf-sidebar").css("right","-80px");
+                }
+            });
+        });
+});
+$(document).ready(function() {
+        var sidebar = $("#limf2"); //get offset of second div
+        var offset = sidebar.offset().top; //check for top property
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= offset) {
+                    // $(".cornerpic img").css("right", "50px")
+                    $(".cornerpic1 img").css("opacity", "1")
+                } else {
+                    // $(".cornerpic img").css("right", "-400px")
+                    $(".cornerpic1 img").css("opacity", "0")
                 }
             });
         });
 });
 
 $(document).ready(function() {
-        var sidebar = $("#suite1"); //get offset of second div
+        var sidebar = $("#limf3"); //get offset of second div
         var offset = sidebar.offset().top; //check for top property
         $(function () {
             $(window).scroll(function () {
                 if ($(window).scrollTop() >= offset) {
-                    $(".suite-text1").css("opacity","1");
-                    $(".suite-text1").css("transform","translateX(0px)");
+                    // $(".cornerpic img").css("right", "50px")
+                    $(".cornerpic2 img").css("opacity", "1")
                 } else {
-                    $(".suite-text1").css("opacity","0");
-                    $(".suite-text1").css("transform","translateX(-100px)");
-                }
-            });
-        });
-});
-
-$(document).ready(function() {
-        var sidebar = $("#suite2"); //get offset of second div
-        var offset = sidebar.offset().top; //check for top property
-        $(function () {
-            $(window).scroll(function () {
-                if ($(window).scrollTop() >= offset) {
-                    $(".suite-text2").css("opacity","1");
-                    $(".suite-text2").css("transform","translateX(0px)");
-                } else {
-                    $(".suite-text2").css("opacity","0");
-                    $(".suite-text2").css("transform","translateX(-100px)");
-                }
-            });
-        });
-});
-
-$(document).ready(function() {
-        var sidebar = $("#suite3"); //get offset of second div
-        var offset = sidebar.offset().top; //check for top property
-        $(function () {
-            $(window).scroll(function () {
-                if ($(window).scrollTop() >= offset) {
-                    $(".suite-text3").css("opacity","1");
-                    $(".suite-text3").css("transform","translateX(0px)");
-                } else {
-                    $(".suite-text3").css("opacity","0");
-                    $(".suite-text3").css("transform","translateX(-100px)");
+                    // $(".cornerpic img").css("right", "-400px")
+                    $(".cornerpic2 img").css("opacity", "0")
                 }
             });
         });

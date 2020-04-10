@@ -7,7 +7,7 @@ html{
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   overflow-x:hidden;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 
@@ -22,29 +22,28 @@ html{
 /* LOGO MENU */
 .logo-menu{
   position: fixed;
-  width: 15%;
+  width: 210px;
   margin: 0px;
   top: 0;
   text-align: center;
   background-color: #1c1c1c;
   z-index: 1000;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition:    all 0.4s ease;
-  -ms-transition:     all 0.4s ease;
-  -o-transition:      all 0.4s ease;
+  transition: 1s;
+  transition-delay: .5s;
 }
 .logo{
-  height: auto;
-  transition: 0.8s;
+  width: 200px;
+  height: 74px;
+  margin: 5px 0 0 5px;
+  transition: 1s;
   -webkit-transition: all 0.8s ease;
   -moz-transition:    all 0.8s ease;
   -ms-transition:     all 0.8s ease;
   -o-transition:      all 0.8s ease;
 }
 .logo-menu img{
-  width: 90%;
+  width: 200px;
   text-align: center;
-  margin: 10px 0;
   -webkit-transition: all 0.4s ease;
   -moz-transition:    all 0.4s ease;
   -ms-transition:     all 0.4s ease;
@@ -238,16 +237,18 @@ html{
 }
 .sidebar{
   position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
   display: block;
   opacity: .5;
   width: 50px;
   height: auto;
   right: -80px;
   text-align: center;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition:    all 0.4s ease;
-  -ms-transition:     all 0.4s ease;
-  -o-transition:      all 0.4s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -ms-transition:     all 0.5s ease;
+  -o-transition:      all 0.5s ease;
   z-index: 900;
 }
 .sidebar:hover{
@@ -863,11 +864,14 @@ html{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: 4s;
 }
 .accoleft{
   align-self: center;
   height: auto;
   padding: 50px;
+  transition: 1s;
+  opacity: 0;
 }
 .accoleft h2{
   font-weight: 100;
@@ -903,6 +907,8 @@ html{
   align-self: center;
   height: auto;
   padding: 50px;
+  transition: 1s;
+  opacity: 0;
 }
 .accoright h2{
   font-weight: 100;
@@ -927,7 +933,7 @@ html{
 }
 .accoright img{
   display: block;
-  transition: transform 0.4s;
+  transition: 0.4s;
 }
 .accoright:hover img{
   transform: scale(1.1);
@@ -965,6 +971,7 @@ html{
   flex-direction: row;
   justify-content:center;
   text-align: center;
+  transition: 4s;
 }
 .restleft{
   background-color: #1c1c1c;
@@ -992,6 +999,7 @@ html{
   padding: 50px;
   right: 0;
   z-index: 10;
+  transition: 1s;
   }
 
 .restleft h2{
@@ -1074,6 +1082,7 @@ html{
   padding: 50px;
   left: 0;
   z-index: 10;
+  transition: 1s;
 }
 
 #h-services{
@@ -1101,6 +1110,7 @@ html{
   margin: 0 auto;
   height: auto;
   z-index: 5;
+  transition: 1s;
 }
 .hserves{
   width: 60%;
@@ -1111,6 +1121,7 @@ html{
   flex-direction: row;
   justify-content: space-between;
   z-index: 5;
+  transition: 2s;
 }
 .hserv{
   width: 20%;
@@ -1177,6 +1188,7 @@ html{
   height: auto;
   width: 75%;
   align-self: center;
+  transition: 1s;
 }
 #gallery{
   height: 80%;
@@ -1184,7 +1196,7 @@ html{
 #h-contact{
   width: 100%;
   margin: 0 auto;
-  height: auto;
+  height: 275px;
   background-color: #1c1c1c;
   display: flex;
   flex-direction: row;
@@ -1237,6 +1249,10 @@ html{
   -ms-transition:     all 0.4s ease;
   -o-transition:      all 0.4s ease;
 }
+.qlinks{
+  transition: 0.5s;
+  overflow-y: hidden;
+}
 .qlinks a{
   font-size: 0.8em;
   line-height: 2em;
@@ -1245,6 +1261,19 @@ html{
   text-decoration: none;
   display: block;
 }
+.subql{
+  padding-left: 15px;
+}
+.mainql .subql{
+  visibility: hidden;
+  display: none;
+}
+.mainql:hover .subql{
+  visibility: visible;
+  display: block;
+  transition: 1s;
+}
+
 .qlinks a:hover{
   color: grey;
   padding-left: 8px;
@@ -1314,6 +1343,7 @@ html{
   transform: translateX(-50%);
   margin: 0 auto;
   color: white;
+  transition: 1.5s;
 }
 .roomhometext p{
   text-align: center;
@@ -1344,33 +1374,97 @@ html{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  overflow: visible;
 }
-.room-image{
+.room-image1{
   width: 47%;
   height: auto;
   overflow: hidden;
+  transition: 1s;
 }
-.room-image img{
+.room-image1 img{
   width: auto;
   height: 100%;
-  transform: translate(50%, 50%);
-
+  transition: 1s;
 }
-.room-text{
+.room-text1{
   width: 47%;
+  transition: 1s;
 }
-.room-text p{
+.room-text1 p{
   font-size: 0.8em;
   line-height: 1.5em;
   margin: 0 auto;
   padding-bottom: 10px;
 }
-.room-text h2{
+.room-text1 h2{
   font-weight: 100;
   font-size: 2em;
   color: #2c28b2;
 }
-.room-text h3{
+.room-text1 h3{
+  font-weight: 100;
+  font-size: 1.2em;
+  color: grey;
+}
+.room-image2{
+  width: 47%;
+  height: auto;
+  overflow: hidden;
+  transition: 1s;
+}
+.room-image2 img{
+  width: auto;
+  height: 100%;
+  transition: 1s;
+}
+.room-text2{
+  width: 47%;
+  transition: 1s;
+}
+.room-text2 p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.room-text2 h2{
+  font-weight: 100;
+  font-size: 2em;
+  color: #2c28b2;
+}
+.room-text2 h3{
+  font-weight: 100;
+  font-size: 1.2em;
+  color: grey;
+}
+.room-image3{
+  width: 47%;
+  height: auto;
+  overflow: hidden;
+  transition: 1s;
+}
+.room-image3 img{
+  width: auto;
+  height: 100%;
+  transition: 1s;
+}
+.room-text3{
+  width: 47%;
+  transition: 1s;
+}
+.room-text3 p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.room-text3 h2{
+  font-weight: 100;
+  font-size: 2em;
+  color: #2c28b2;
+}
+.room-text3 h3{
   font-weight: 100;
   font-size: 1.2em;
   color: grey;
@@ -1503,27 +1597,86 @@ html{
   position: absolute;
   bottom: 0;
 }
-.suite-text{
+.suite-text1{
   width: 35%;
   padding: 25px;
   position: absolute;
   align-self: center;
   left: 50px;
-  background-color: rgba(0, 0, 0, 0.8)
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 1s;
+  transform: translateX(-100px);
 }
-.suite-text p{
+.suite-text1 p{
   font-size: 0.8em;
   line-height: 1.5em;
   margin: 0 auto;
   padding-bottom: 10px;
   color: #DCDCDC;
 }
-.suite-text h2{
+.suite-text1 h2{
   font-weight: 100;
   font-size: 2em;
   color: white;
 }
-.suite-text h3{
+.suite-text1 h3{
+  font-weight: 100;
+  font-size: 1.2em;
+  color: grey;
+}
+
+.suite-text2{
+  width: 35%;
+  padding: 25px;
+  position: absolute;
+  align-self: center;
+  left: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 1s;
+  transition-delay: 1s;
+}
+.suite-text2 p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  color: #DCDCDC;
+}
+.suite-text2 h2{
+  font-weight: 100;
+  font-size: 2em;
+  color: white;
+}
+.suite-text2 h3{
+  font-weight: 100;
+  font-size: 1.2em;
+  color: grey;
+}
+.suite-text3{
+  width: 35%;
+  padding: 25px;
+  position: absolute;
+  align-self: center;
+  left: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 1s;
+  transition-delay: 2s;
+}
+.suite-text3 p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  color: #DCDCDC;
+}
+.suite-text3 h2{
+  font-weight: 100;
+  font-size: 2em;
+  color: white;
+}
+.suite-text3 h3{
   font-weight: 100;
   font-size: 1.2em;
   color: grey;
@@ -1544,13 +1697,33 @@ html{
   display: block;
   margin-bottom: 20px;
 }
-.suite-text a{
+.suite-text1 a{
   text-decoration: none;
   color: grey;
   font-weight: bold;
   transition: 0.5s;
 }
-.suite-text a:hover{
+.suite-text1 a:hover{
+  letter-spacing: 2px;
+  color: white;
+}
+.suite-text2 a{
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.suite-text2 a:hover{
+  letter-spacing: 2px;
+  color: white;
+}
+.suite-text3 a{
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.suite-text3 a:hover{
   letter-spacing: 2px;
   color: white;
 }
@@ -1560,7 +1733,7 @@ html{
 .tariff2 p{
   padding: 0;
 }
-.room-sidebar{
+.suitesidebar{
   position: fixed;
   display: block;
   top: 50%;
@@ -1576,10 +1749,10 @@ html{
   -o-transition:      all 0.4s ease;
   z-index: 900;
 }
-.room-sidebar:hover{
+.suitesidebar:hover{
   opacity: 1;
 }
-.room-sidebar > * {
+.suitesidebar > * {
   color: grey;
   font-size: 1em;
   text-align: center;
@@ -1591,7 +1764,7 @@ html{
   opacity: .8;
 }
 
-.room-sidebar a:hover{
+.suitesidebar a:hover{
   color: black;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
@@ -1637,7 +1810,7 @@ html{
   text-align: center;
   font-size: 2em;
 }
-#limf2{
+#limf1{
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -1648,27 +1821,27 @@ html{
   overflow: hidden;
   text-align: center;
 }
-#limf2 img{
+#limf1 img{
   width: 100%;
   height: auto;
   position: absolute;
   bottom: -200px;
 }
-.limf2-text{
+.limf1-text{
   width: 35%;
   padding: 25px;
   position: absolute;
   align-self: center;
   bottom: 400px;
 }
-.limf2-text p{
+.limf1-text p{
   font-size: 0.8em;
   line-height: 1.5em;
   margin: 0 auto;
   padding-bottom: 10px;
   color: black;
 }
-.limf2-text h2{
+.limf1-text h2{
   font-weight: 100;
   font-size: 2em;
   color: #2c28b2;
@@ -1683,13 +1856,100 @@ html{
   letter-spacing: 2px;
   color: white;
 }
-.tariff1 p{
-  padding: 0;
+
+#limf2, #limf3{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  overflow: hidden;
 }
-.tariff2 p{
-  padding: 0;
+.limf2-text{
+  width: 25%;
+  padding: 25px;
+  position: absolute;
+  align-self: center;
+  left: 100px;
 }
-.room-sidebar{
+.limf2-text p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  color: black;
+}
+.limf2-text h2{
+  font-weight: 100;
+  font-size: 2em;
+  color: #2c28b2;
+}
+.cornerpic1 img{
+  width:30%;
+  height: auto;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  transition: 2s;
+  opacity: 1;
+}
+
+.chef{
+  width: 75%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.chef-image{
+  width: 47%;
+  height: auto;
+  overflow: hidden;
+}
+.chef-image img{
+  width: auto;
+  height: 100%;
+  transform: translateX(-120px);
+}
+.chef-image2{
+  width: 47%;
+  height: auto;
+  overflow: hidden;
+}
+.chef-image2 img{
+  width: auto;
+  height: 100%;
+}
+.cornerpic2 img{
+  width:35%;
+  height: auto;
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  transition: 2s;
+  opacity: 1;
+}
+.chef-text{
+  width: 47%;
+}
+.chef-text p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.chef-text h2{
+  font-weight: 100;
+  font-size: 2em;
+  color: #2c28b2;
+}
+.limf-sidebar{
   position: fixed;
   display: block;
   top: 50%;
@@ -1705,10 +1965,10 @@ html{
   -o-transition:      all 0.4s ease;
   z-index: 900;
 }
-.room-sidebar:hover{
+.limf-sidebar:hover{
   opacity: 1;
 }
-.room-sidebar > * {
+.limf-sidebar > * {
   color: grey;
   font-size: 1em;
   text-align: center;
@@ -1720,7 +1980,174 @@ html{
   opacity: .8;
 }
 
-.room-sidebar a:hover{
+.limf-sidebar a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition:    all 0.4s ease;
+  -ms-transition:     all 0.4s ease;
+  -o-transition:      all 0.4s ease;
+}
+
+
+#vistahome{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+#vistahome img{
+  position: absolute;
+  bottom: 0;
+}
+#vista1{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content:center;
+  overflow: hidden;
+}
+#vista1 img{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -200px;
+  transition: 2s;
+}
+.vista1-text{
+  width: 35%;
+  padding: 25px;
+  position: absolute;
+  align-self: center;
+  bottom: 425px;
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.5s;
+  transform: translateY(100px);
+}
+
+.vista1-text p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  color: black;
+}
+.vista1-text h2{
+  font-weight: 100;
+  font-size: 2em;
+  color: #2c28b2;
+}
+
+#vista2{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+#vista2 img{
+  height: auto;
+  width: 100%;
+  transition: 2s;
+}
+.vista2-text{
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  padding: 25px;
+  color: white;
+  transition: 1s;
+  transition-delay: 1s;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+.vista2-text p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+.vista2-text h2{
+  font-weight: 100;
+  font-size: 2em;
+  padding-bottom: 5px;
+}
+
+#vista3{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+}
+#vista3 img{
+  width: 100vw;
+  height: auto;
+  transform: translateY(-150px);
+  transition: 2s;
+}
+.vista3-text{
+  width: 50%;
+  height: auto;
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  padding: 25px;
+  color: white;
+  transition: 1s;
+  transition-delay: 1s;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.vista3-text p{
+  font-size: 0.8em;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+.vista3-text h2{
+  font-weight: 100;
+  font-size: 2em;
+  padding-bottom: 5px;
+}
+
+.vistasidebar{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  opacity: .5;
+  width: 50px;
+  height: auto;
+  right: -80px;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -ms-transition:     all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+  z-index: 900;
+}
+.vistasidebar:hover{
+  opacity: 1;
+}
+.vistasidebar > * {
+  color: grey;
+  font-size: 1em;
+  text-align: center;
+  background-color: white;
+  padding: 15px 0 10px 0;
+  display: block;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  opacity: .8;
+}
+
+.vistasidebar a:hover{
   color: black;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
